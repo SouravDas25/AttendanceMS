@@ -1,0 +1,36 @@
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+
+tfoot ,tfoot > tr {
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+th { 
+  background: rgb(104, 67, 67) !important; 
+  color: gold; 
+  font-weight: bold; 
+  
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+

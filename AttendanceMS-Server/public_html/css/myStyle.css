@@ -1,0 +1,193 @@
+
+#sidebar {
+  padding:15px;
+  margin-top:10px;
+}
+
+.attn-btn {
+  width:100%;
+  -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+
+
+
+.bg-grey{
+  background-color:rgb(87, 87, 87);
+}
+
+.page-custom{
+  overflow-y:auto;
+  height:90vh;
+  max-width:100%;
+  min-width: 90%;
+  padding: 0;
+  padding-top:2%;
+}
+
+#page-content{
+  padding: 0;
+}
+
+.text-white {
+  color: white;
+}
+
+#page-content{
+  background-image: url("/img/bg9.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+#sidebar {
+  background-image: url("/img/sidebar1.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+#sidebar{
+  padding: 0;
+}
+
+#sidebar > div {
+  opacity : 0.735;
+}
+
+
+.active {
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .page-custom{
+      overflow-y:initial;
+      height:100%;
+      width:100%;
+  }
+  
+}
+
+#logo 
+{
+  background-image: url("/img/bg5.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+#logo > .jumbotron {
+  background: rgba(36, 29, 27, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-purple{
+  color:purple;
+}
+
+.text-navy{
+  color:skyblue;
+}
+
+.text-green{
+  color:green;
+}
+
+.text-yellow{
+  color:goldenrod;
+}
+
+.text-pink{
+  color:orangered;
+}
+
+.text-pink{
+  color:orangered;
+}
+
+
+.text-black{
+  color:black;
+}
+
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  overflow: auto;
+  height: 100%;
+}
+
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.closebtn {
+    padding-left: 10px;
+    color: #888;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000;
+}
+
+/*
+@media only screen and (min-width: 768px) {
+
+  .navbar-brand
+  {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      margin:0 auto;
+  }
+  .navbar-toggle {
+      z-index:3;
+  }
+}*/
+
+@font-face {
+  font-family: 'Megatron';
+  src:  url('webfont.eot'); /* IE9 Compat Modes */
+  src:  url('webfont.eot?#iefix') format('embedded-opentype'),
+        url('/font/Megatron.woff2') format('woff2'),
+        url('/font/Megatron.woff') format('woff'),
+        url('/font/Megatron.ttf') format('truetype'),
+        url('/font/Megatron.svg#Megatron') format('svg'); /* Legacy iOS */
+}
+
+
+.Megatron {
+  font-family : 'Megatron',sans-serif;
+}
+
+.zomify{
+  transition: all .05s ease-in-out;
+}
+
+.zomify:hover {
+  font-size: 1.5em;
+}
