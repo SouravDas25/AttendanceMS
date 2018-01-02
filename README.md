@@ -44,4 +44,4 @@ Attendance Management System
 ![Dashboard](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor%20Project/Automated%20Attedence%20System/d4174bf0-f171-4ad3-840e-a0781bab1811.jpg)
 
 ### Dashboard
-![Dashboard](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor%20Project/Automated%20Attedence%20System/d4174bf0-f171-4ad3-840e-a0781bab1811.jpg)
+![Dashboard](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor%20Project/Automated%20Attedence%20System/a52ee832-b8b1-4021-87f3-fa19eeab8715.jpg)
