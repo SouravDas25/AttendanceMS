@@ -1,11 +1,12 @@
 <?php
 
 namespace App;
+
 use DB;
 
 class Dept
 {
-    public static function get_all_dept() 
+    public static function get_all_dept()
     {
         /*
         * id
@@ -24,32 +25,31 @@ class Dept
         WHERE dept_name LIKE ? OR
         full_name LIKE ? OR
         course_years LIKE ? ";
-        return DB::select($query,[$search_text,$search_text,$search_text]);
+        return DB::select($query, [$search_text, $search_text, $search_text]);
     }
 
     public static function get_from_id($id)
     {
         $query = "SELECT * FROM dept_view WHERE id = ? ";
-        $r = DB::select($query,[$id]);
-        if( count($r) < 1 || $r == null) return null;
+        $r = DB::select($query, [$id]);
+        if (count($r) < 1 || $r == null) return null;
         return $r[0];
     }
 
-    public static function insert_and_return_id($dept_name,$dept_fullname,$dept_course_years)
+    public static function insert_and_return_id($dept_name, $dept_fullname, $dept_course_years)
     {
-        DB::insert('INSERT INTO dept(name,full_name,course_years) VALUES(?,?,?) ',[$dept_name,$dept_fullname,$dept_course_years] );
-        $dept_id = DB::select( 'SELECT LAST_INSERT_ID() AS id;')[0]->id;
-        for($i=1;$i<=$dept_course_years*2;$i++)
-		{
-			DB::insert('INSERT INTO batch(sem_no,dept_id) VALUES(?,?) ',[$i,$dept_id] );
+        DB::insert('INSERT INTO dept(name,full_name,course_years) VALUES(?,?,?) ', [$dept_name, $dept_fullname, $dept_course_years]);
+        $dept_id = DB::select('SELECT LAST_INSERT_ID() AS id;')[0]->id;
+        for ($i = 1; $i <= $dept_course_years * 2; $i++) {
+            DB::insert('INSERT INTO batch(sem_no,dept_id) VALUES(?,?) ', [$i, $dept_id]);
         }
-        return $dept_id ;
+        return $dept_id;
     }
 
-    public static function update_from_id($id,$dept_name,$dept_fullname,$dept_course_years)
+    public static function update_from_id($id, $dept_name, $dept_fullname, $dept_course_years)
     {
         DB::update('UPDATE dept SET name = ?,full_name = ?,course_years=? WHERE id = ?',
-         [$dept_name, $dept_fullname ,$dept_course_years, $id]);
+            [$dept_name, $dept_fullname, $dept_course_years, $id]);
     }
 
     public static function delete_from_id($id)
@@ -68,7 +68,7 @@ class Dept
         course_years,
         current_year,
         batch_id FROM batch_dept_sem_view WHERE dept_id = ? AND current_year <= course_years Order BY current_year";
-        return DB::select($query,[$dept_id]);
+        return DB::select($query, [$dept_id]);
     }
 
     public static function get_all_batch_of_dept($dept_id)
@@ -81,7 +81,7 @@ class Dept
         course_years,
         current_year,
         batch_id FROM batch_dept_sem_view WHERE dept_id = ? Order BY current_year";
-        return DB::select($query,[$dept_id]);
+        return DB::select($query, [$dept_id]);
     }
 
     public static function get_all_active_batches()
@@ -107,7 +107,7 @@ class Dept
     {
         $query = "SELECT batch_id, sem_no, dept_name, dept_id FROM batch_dept_view_2
         WHERE dept_id = ? ";
-        return DB::select($query,[$dept_id]);
+        return DB::select($query, [$dept_id]);
     }
 
     public static function get_all_passOut_batches()
