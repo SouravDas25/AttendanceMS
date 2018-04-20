@@ -22,8 +22,8 @@ Route::get('/', ['as' => 'root', 'uses' => 'openSearchController@index']);
 Route::get('/get_year', 'openSearchController@get_year');
 
 
-Route::get('/signup', 'signupController@index');
-Route::post('/signup/store', 'signupController@store');
+Route::get('/signup', 'signupController@index')->name("signup");
+Route::post('/signup/store', 'signupController@store')->name("signup.store");
 
 Route::get('/welcome', ['uses' => function () {
     return redirect('/');

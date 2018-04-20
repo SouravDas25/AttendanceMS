@@ -1,50 +1,5 @@
 @extends('layouts.open')
 
-
-
-
-@section('page_style')
-    <style>
-
-        #index-banner:after {
-            background-color: rgba(36, 29, 27, 0.82);
-            overflow: hidden;
-            height: 100%;
-            z-index: 1;
-        }
-
-        .parallax > img {
-            opacity: 0.3;
-        }
-
-        @media (max-width: 1000px) and (min-width: 426px) {
-
-            .res-font {
-                font-size: 2em;
-            }
-
-            .parallax-container {
-                min-height: 550px;
-            }
-        }
-
-        @media (max-width: 426px) {
-
-            .res-font {
-                font-size: 2.29em;
-            }
-
-            .parallax-container {
-                min-height: 555px;
-            }
-        }
-
-    </style>
-@endsection
-
-
-
-
 @section('page_content')
 
     <div id="index-banner" class="parallax-container ">
@@ -138,8 +93,8 @@
                                         <br>
                                     </h3>
                                     <i style="font-size:15px;">
-                                        {{ $batch->dept_name }} {{ Utility::ordinal_suffix($batch->current_year) }} Year {{ Utility::ordinal_suffix($batch->sem_no)
-						}} Sem
+                                        {{ $batch->dept_name }} {{ Utility::ordinal_suffix($batch->current_year) }}
+                                        Year {{ Utility::ordinal_suffix($batch->sem_no) }} Sem
                                         <br> Roll No - {{ $student->student_roll }}
                                     </i>
                                 </div>
@@ -244,7 +199,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text">
-                            <i class="material-icons">flash_on</i>
+                            <i class="material-icons">timer</i>
                         </h2>
                         <h5 class="center">Speeds up Attendance</h5>
 
@@ -257,7 +212,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text">
-                            <i class="material-icons">group</i>
+                            <i class="material-icons">gesture</i>
                         </h2>
                         <h5 class="center">User Experience Focused</h5>
 
@@ -297,13 +252,26 @@
 @section('page_script')
     <script src="{{ asset("js/jquery.canvasjs.min.js") }}" type="text/javascript"></script>
     <script>
+        var navigationFn;
+        navigationFn = {
+            goToSection: function (id, time) {
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top
+                }, time);
+            }
+        };
+
         $(document).ready(function () {
             // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
             $('#cya_year').parent().hide();
             $('#roll').parent().hide();
             $("#check-btn").hide();
             $("#indet").hide(0);
-            $('.parallax').parallax();
+            @if( !isset($result) && !isset($err_msg) && !isset($sem_result) )
+            setTimeout(function () {
+                navigationFn.goToSection('#index-banner', 25);
+            }, 500);
+            @endif
         });
 
         function submit_your_attendance() {
@@ -312,8 +280,8 @@
         }
 
         $(window).bind("load", function () {
-            {!! ( isset($result) || isset($sem_result) )? "document.getElementById('cya').scrollIntoView(true);" : "" !!}
-            {!! ( isset($err_msg) )? "document.getElementById('cya').scrollIntoView();" : "" !!}
+            {!! ( isset($result) || isset($sem_result) )? "navigationFn.goToSection('#cya',2000);" : "" !!}
+            {!! ( isset($err_msg) )? "navigationFn.goToSection('#cya',2000);" : "" !!}
             myonload();
         });
 

@@ -1,0 +1,12 @@
+
+*.pyc
+*.exe
+*/.idea/
+
+*.pdf
+*.db
+*.csv
+*.dat
+
+*.env
+*AttendanceMS-Server/vendor/*

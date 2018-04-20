@@ -8,7 +8,7 @@
 <!--<![endif]-->
 <head>
     <meta charset="utf-8"/>
-    <title>Tict Attendance System</title>
+    <title>{{ config('app.name') }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="Online Attendance System" name="description"/>
     <meta content="Sourav Das - Tict Bca1518" name="author"/>
@@ -22,7 +22,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset("/css/materialize.min.css") }}">
-    <link href="{{ asset("/css/style.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ asset("/css/root-style.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <link href="{{ asset("/css/bootstrap.css") }}" rel="stylesheet"/>
 

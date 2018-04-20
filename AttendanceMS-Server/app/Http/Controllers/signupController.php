@@ -26,7 +26,7 @@ class signupController extends Controller
         $email = Utility::is_email($req->get('email'));
         $phone = Utility::is_phone($req->get('contact'));
         $password = $req->get('password');
-        $user_type = Utility::get_super_admin_user_type();
+        $user_type = Utility::get_admin_user_type();
 
         if ($password != $req->get('cnf_password')) {
             return view('errors.503', ['msg' => 'Password Mismatch.']);

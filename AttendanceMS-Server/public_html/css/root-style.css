@@ -56,6 +56,29 @@ footer.page-footer {
   margin: 0;
 }
 
+html {
+    min-width: 280px !important;
+}
+
+body {
+    background-color: #455a64;
+}
+
+.container {
+    margin: 0;
+    border: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+    min-width: 100%;
+}
+
+@media (max-width: 426px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 
 #index-banner:after {
   background-color: rgba(36, 29, 27, 0.82);

@@ -1,4 +1,4 @@
-@extends('layouts.plane')
+@extends('layouts.plane2')
 
 
 @section('style')
