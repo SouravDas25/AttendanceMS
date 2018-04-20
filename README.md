@@ -46,8 +46,8 @@ Attendance Management System
 ### Dashboard
 ![Dashboard](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor%20Project/Automated%20Attedence%20System/a52ee832-b8b1-4021-87f3-fa19eeab8715.jpg)
 
-
-## installation
+ 
+## Installation for Server
 
  - clone the repository.
  - run "composer install"
@@ -56,4 +56,8 @@ Attendance Management System
  - add the necessary details to the env variable 
  - open with apache
  - done
+
+## Installation for App
+
+ - Open with Android Studio
 
