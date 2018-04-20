@@ -284,8 +284,7 @@ class Utility
 
     public static function rootUrl($url = "")
     {
-        if (strlen($url) > 0 && $url[0] != "/") $url = "/" . $url;
-        return route("root") . $url;
+        return url($url);
     }
 
 }
