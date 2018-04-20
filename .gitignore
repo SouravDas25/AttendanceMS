@@ -10,3 +10,5 @@
 
 *.env
 *AttendanceMS-Server/vendor/*
+*Minor-Project/*
+*database-data.sql
