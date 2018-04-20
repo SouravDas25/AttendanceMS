@@ -1,0 +1,4 @@
+@extends('')
+
+@section('')
+@endsection

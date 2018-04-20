@@ -55,3 +55,37 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+
+#index-banner:after {
+  background-color: rgba(36, 29, 27, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+
+.parallax > img {
+  opacity: 0.3;
+}
+
+@media (max-width: 1000px) and (min-width: 426px) {
+
+  .res-font {
+    font-size: 2em;
+  }
+
+  .parallax-container {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 426px) {
+
+  .res-font {
+    font-size: 2.29em;
+  }
+
+  .parallax-container {
+    min-height: 555px;
+  }
+}
