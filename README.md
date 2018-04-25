@@ -1,6 +1,7 @@
 # AttendanceMS
 Attendance Management System
 * Web App + Android App
+* Offline Attendance Facility in App ( attendance can be taken even when offline).
 
 ## Web App 
 * https://ticteduattendence.000webhostapp.com
