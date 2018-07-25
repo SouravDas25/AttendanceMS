@@ -60,5 +60,7 @@ Attendance Management System
 
 ## Installation for App
 
- - Open with Android Studio
+ - Open with Android Studio 2
+   - use gradle 3.3
+   - use android plugin 2.3.3
 
