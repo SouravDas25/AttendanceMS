@@ -32,7 +32,7 @@
             waves-effect waves-green btn-flat" data-dismiss="modal">
             Close
         </button>
-        <button class="btn btn-danger waves-effect waves-green btn-flat" onclick="login_submit()"/>
+        <button class="btn btn-danger waves-effect waves-green btn-flat" onclick="login_submit()">
         Sign In
         </button>
     </div>

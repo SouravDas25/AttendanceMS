@@ -2,40 +2,40 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\a9da6fdc68516345aa54f1cc27931ce9788c226a\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="138b5e3a5341bb37117b13f327de68f81f9f0669">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4d1186a341130c7b418d144ce4af75fde88ce7e8\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_4d1186a341130c7b418d144ce4af75fde88ce7e8.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\1a14e4090d19488c8e1ee265cb3e0fbac539d959\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="28cb30c89c8e501ded77e960407731df6c54b844">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_359d081671f4f8e7baffc0653eee5e41b341302b\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_359d081671f4f8e7baffc0653eee5e41b341302b.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\8e53359dba9c7a5bb0edfd3f519d16b0bf708673\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="b4a446c110c5a9f3a62907367d5eea4d4062c36a">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_96e171f4c6f5187ca3a62e87312ebe709bf27f27\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_96e171f4c6f5187ca3a62e87312ebe709bf27f27.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\40a25c73d037a180483cdc638917417308b30d42\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\e33b691dcf6b782acbb600ac9d25b7b01ec162ff\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_730081b973c0ac795087a91d9fcb7aee13ebb613\classes.dex" />
+        sha1="eef44a34be1eef845ecb4072e3692b434af05ad4">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_313faa720f018c0b29d66f091f7af7d30fc82df3.jar" />
     </item>
     <item
         is-multidex="true"
@@ -47,40 +47,67 @@
         <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_59a902299e5b813dc86f70e9cbd09bd576ed8beb\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\57193ec7e64813dbc58ac180e5361bb7c5fb252c\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\40a25c73d037a180483cdc638917417308b30d42\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="94d358351559620a2c3d2ba3ac04d03a59a61bb3">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bf5308442931433ecf5d35a350d4c01749f96768\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_730081b973c0ac795087a91d9fcb7aee13ebb613.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\eef2ac30c5e8667269fe7ed0237b0ac84c7e4c93\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="53762fb1daacc5e5fb9ce83c4d00365f71c10f1a">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f25204499cc80cc3817eb5fc490ac939949c8475\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_f25204499cc80cc3817eb5fc490ac939949c8475.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\17388fdd3e0105fe7a794ebe6b87d71cb9571c19\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="df0c541b5406292d1c3d74fc8ea119bde14e77b0">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_36ef008d04502cb5cc19dbd34320d86c14d943f5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\f531a29f273b80070648e5b0086bf6b3c5bec2d1\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_456fb37153c25e11109c03acc9d881acfb674d33\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_456fb37153c25e11109c03acc9d881acfb674d33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\57193ec7e64813dbc58ac180e5361bb7c5fb252c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94d358351559620a2c3d2ba3ac04d03a59a61bb3">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_bf5308442931433ecf5d35a350d4c01749f96768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\17388fdd3e0105fe7a794ebe6b87d71cb9571c19\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="df0c541b5406292d1c3d74fc8ea119bde14e77b0">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_36ef008d04502cb5cc19dbd34320d86c14d943f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\598bd5fb801a9ae25c22ec7c856d8ab6c8f67791\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="97cd0ab3ffad045a162fc1a413fe6abc58e199c4">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_3e74cfb345b049cd98e44c575d96149ca29753e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\275c54dba1666249557b74239c4109198c803c3e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="48a969b476c5c4bd8cabfe295428ff222bc68b8e">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_395a17e17907a6ac914138cb1b0aa5bfd5c4c541.jar" />
     </item>
     <item
         is-multidex="true"
@@ -88,80 +115,53 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="741b558cd2ddc28769fc0d8236167641cd57722c">
+        sha1="e5cede02db917722ce4373aea66ee4d6e4fac307">
         <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_acafcf68fe0a93af955c34546b89277a2a4a0905\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\275c54dba1666249557b74239c4109198c803c3e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="48a969b476c5c4bd8cabfe295428ff222bc68b8e">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_395a17e17907a6ac914138cb1b0aa5bfd5c4c541\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\SD\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.0.2\8b68a849722b44f584e2d68c451c5e3844c10380\support-annotations-26.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="8b68a849722b44f584e2d68c451c5e3844c10380">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.2_6a4dcd9384ef187b13486f37f2907140a67eefc2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\bb4d5ad824069b712e932cb089a2b0a3d246e924\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="4e38f488b591fa8ef9dce3e21752c92bde5f6f7c">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5a2a3a02d45a7834ac80ac839f694882c382d3a\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_b5a2a3a02d45a7834ac80ac839f694882c382d3a.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_bb71f8a7e1fbabf9d015f2d54eca35088335376f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\e33b691dcf6b782acbb600ac9d25b7b01ec162ff\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="eef44a34be1eef845ecb4072e3692b434af05ad4">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_313faa720f018c0b29d66f091f7af7d30fc82df3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\41114ce84017ad5daa1673e151c5308932d6bccd\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="f9f219b8a8acc35922ab06f4ff29769041481b4b">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf4e6fd6a0a4a22b8ad4a26e91b3398fa1faec3e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\SD\.android\build-cache\2559170c9b539348b4ff2a05ff8d122f8ce9c056\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="f6e937fc4829662d169f20da6f208e053f3714a8">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f584dc9047392b3f6ff904aacb9d7c3c6afb952\classes.dex" />
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_1f584dc9047392b3f6ff904aacb9d7c3c6afb952.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\SD\.android\build-cache\598bd5fb801a9ae25c22ec7c856d8ab6c8f67791\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\SD\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.0.2\8b68a849722b44f584e2d68c451c5e3844c10380\support-annotations-26.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="97cd0ab3ffad045a162fc1a413fe6abc58e199c4">
-        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3e74cfb345b049cd98e44c575d96149ca29753e9\classes.dex" />
+        sha1="8b68a849722b44f584e2d68c451c5e3844c10380">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.2_6a4dcd9384ef187b13486f37f2907140a67eefc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\.android\build-cache\41114ce84017ad5daa1673e151c5308932d6bccd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f9f219b8a8acc35922ab06f4ff29769041481b4b">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\classes_cf4e6fd6a0a4a22b8ad4a26e91b3398fa1faec3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SD\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Cloud\OneDrive\Programming\Projects\web_development\AttendanceMS\AttendanceMS-App\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_bb71f8a7e1fbabf9d015f2d54eca35088335376f.jar" />
     </item>
 
 </items>
