@@ -20,7 +20,7 @@
                                 @else
                                     <a class="btn btn-primary btn-lg" onclick='goBack()' role="button">Back</a>
                                 @endif
-                                <a class="btn btn-primary btn-lg" href="/" role="button">Return To Home</a>
+                                <a class="btn btn-primary btn-lg" href="{{ route('home') }}" role="button">Return To Home</a>
                             </p>
                         </div>
                     </div>

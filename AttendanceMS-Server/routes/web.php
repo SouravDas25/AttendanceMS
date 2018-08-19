@@ -19,7 +19,7 @@ $router->pattern('id', '[0-9]+');
 $router->pattern('no', '[0-9]+');
 
 Route::get('/', ['as' => 'root', 'uses' => 'openSearchController@index']);
-Route::get('/get_year', 'openSearchController@get_year');
+Route::get('/get_year', 'openSearchController@get_year')->name('get_year');
 
 
 Route::get('/signup', 'signupController@index')->name("signup");
@@ -30,25 +30,25 @@ Route::get('/welcome', ['uses' => function () {
 }
 ]);
 
-Route::post('/login.verify', 'loginController@in');
-Route::get('/logout', 'loginController@out');
-Route::get('/forgot_password', 'loginController@fp_index');
-Route::post('/password/reset', 'loginController@fp_reset');
-Route::get('/password/token/{token}', 'loginController@fp_reset_token');
-Route::get('/password/delete/{token}', 'loginController@fp_delete_token');
-Route::post('/password/reset/submit', 'loginController@fp_reset_submit');
+Route::post('/login.verify', 'loginController@in')->name('login.verify');
+Route::get('/logout', 'loginController@out')->name('logout');
+Route::get('/forgot_password', 'loginController@fp_index')->name('forgot.password');
+Route::post('/password/reset', 'loginController@fp_reset')->name('password.reset');
+Route::get('/password/token/{token}', 'loginController@fp_reset_token')->name('password.token');
+Route::get('/password/delete/{token}', 'loginController@fp_delete_token')->name('password.delete.token');
+Route::post('/password/reset/submit', 'loginController@fp_reset_submit')->name('password.reset.submit');
 
 Route::group(['prefix' => '/home', 'middleware' => 'home'], function () {
     //Route::auth();
     Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
-    Route::get('/settings', 'HomeController@settings');
-    Route::get('/settings/oas', 'HomeController@settings_oas_index');
-    Route::post('/settings/user/submit', 'HomeController@user_edit_submit');
-    Route::post('/settings/password/submit', 'HomeController@user_password_submit');
-    Route::group(['prefix' => '/faculty'], function () {
-        Route::get('/', 'userController@index');
-        Route::get('/create', 'userController@create');
-        Route::post('/create/submit', 'userController@create_submit');
+    Route::get('/settings', 'HomeController@settings')->name('.settings');
+    Route::get('/settings/oas', 'HomeController@settings_oas_index')->name('.settings.oas');
+    Route::post('/settings/user/submit', 'HomeController@user_edit_submit')->name('.settings.user.submit');
+    Route::post('/settings/password/submit', 'HomeController@user_password_submit')->name('.settings.password.submit');
+    Route::group(['prefix' => '/faculty','as'=>'.faculty'], function () {
+        Route::get('/', 'userController@index')->name('.index');
+        Route::get('/create', 'userController@create')->name('.create');
+        Route::post('/create/submit', 'userController@create_submit')->name('.create.submit');
         Route::get('/update/{id}', 'userController@update');
         Route::get('/update/submit', 'userController@update_submit');
         Route::get('/delete/{id}', 'userController@delete');
