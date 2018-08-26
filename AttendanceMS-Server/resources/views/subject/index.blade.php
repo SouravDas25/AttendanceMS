@@ -3,13 +3,13 @@
 
 
 @section('page_style')
-<link rel="stylesheet" href="/css/treeview.css" />
+<link rel="stylesheet" href="{{ asset('/css/treeview.css') }}" />
 @endsection
 
 @section('section')
 <div class ="row">
 	<div class ="col-sm-8">
-		<form class="form-horizontal" action="/{{ Route::current()->uri() }}" method="get">
+		<form class="form-horizontal" action="{{ url('/'.Route::current()->uri()) }}" method="get">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<input type="text" class="form-control" name="search_text" placeholder="Search Subject..">
@@ -27,7 +27,7 @@
 	</div>
 	<div class="col-sm-4">
 		@include('widgets.panel_button',
-            [   'pb_link'=> "/home/subject/create",
+            [   'pb_link'=> url("/home/subject/create"),
                 'pb_icon'=>"fa fa-sitemap fa-5x",
                 'pb_icon_ani'=>"animated shake",
                 'pb_label'=>"Add a Subject",
@@ -88,7 +88,7 @@
 
 
 @section('page_script')
-<script src="/js/treeview.js"></script>
+<script src="{{ asset('/js/treeview.js') }}"></script>
 <script>
 $(function () {
 	if('{{ isset($st)? $st : "" }}'.length <= 0)

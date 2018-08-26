@@ -38,7 +38,7 @@ Route::get('/password/token/{token}', 'loginController@fp_reset_token')->name('p
 Route::get('/password/delete/{token}', 'loginController@fp_delete_token')->name('password.delete.token');
 Route::post('/password/reset/submit', 'loginController@fp_reset_submit')->name('password.reset.submit');
 
-Route::group(['prefix' => '/home', 'middleware' => 'home'], function () {
+Route::group(['prefix' => 'home', 'middleware' => 'home',"as"=>"home"], function () {
     //Route::auth();
     Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
     Route::get('/settings', 'HomeController@settings')->name('.settings');
@@ -54,10 +54,10 @@ Route::group(['prefix' => '/home', 'middleware' => 'home'], function () {
         Route::get('/delete/{id}', 'userController@delete');
         Route::get('/delete/submit', 'userController@delete_submit');
     });
-    Route::group(['prefix' => '/dept'], function () {
-        Route::get('/', 'deptController@index');
-        Route::get('/create', 'deptController@create');
-        Route::post('/create/submit', 'deptController@create_submit');
+    Route::group(['prefix' => 'dept','as'=>".dept"], function () {
+        Route::get('/', 'deptController@index')->name(".index");
+        Route::get('/create', 'deptController@create')->name(".create");
+        Route::post('/create/submit', 'deptController@create_submit')->name(".create.submit");
         Route::get('/update/{id}', 'deptController@update');
         Route::post('/update/submit', 'deptController@update_submit');
         Route::get('/delete/{id}', 'deptController@delete');
@@ -96,7 +96,7 @@ Route::group(['prefix' => '/home', 'middleware' => 'home'], function () {
         Route::post('/update/submit', 'batchController@update_submit');
         Route::get('/delete/{id}', 'batchController@delete');
         Route::post('/delete/submit', 'batchController@delete_submit');
-        Route::get('/student/{id}/{code}', 'batchController@student_view');
+        Route::get('/student/{id}/{code}', 'batchController@student_view')->name(".student.subject");
         Route::get('/student/{id}/{code}/longlist', 'batchController@student_longlistview');
         Route::get('/setting/index', 'batchController@setting_index');
     });
