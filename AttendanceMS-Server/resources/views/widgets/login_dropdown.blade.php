@@ -16,7 +16,7 @@
             </a>
             </li>
             <li >
-                <a href="{{route('home')}}/settings">
+                <a href="{{route('home.settings')}}">
                 <span class="glyphicon glyphicon-cog text-info" aria-hidden="true" ></span> 
                 <span >Account Settings</span>
                 </a>

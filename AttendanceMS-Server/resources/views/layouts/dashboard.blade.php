@@ -63,13 +63,15 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{{ Utility::rootUrl() }}" class="waves-effect waves-dark">
-                                    <small><i class="fa fa-envelope"></i>
-                                        {{ Utility::is_loged_in() ? Utility::get_user_email() : "Laravel 5" }}</small>
+                                <a href="{{ url('/') }}" class="waves-effect waves-dark">
+                                    <small>
+                                        <i class="fa fa-envelope"></i>
+                                        {{ Utility::is_loged_in() ? Utility::get_user_email() : "Laravel 5" }}
+                                    </small>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{route('home')}}/settings">
+                                <a href="{{route('home.settings')}}">
                                     <small>
                                         <i class="fa fa-gear fa-fw"></i> Account Settings
                                     </small>
@@ -104,7 +106,7 @@
                             <i class="fa fa-tripadvisor"></i> View Attendance
                             <span class="fa arrow"></span>
                         </a>
-                        <ul class="nav nav-second-level collapse in" aria-expanded="true">
+                        <ul class="nav nav-second-level" aria-expanded="true">
                             <li {!! (Request::is('*home/batch*') ? 'class="active-menu"' : '') !!} >
                                 <a href="{{ url('home/batch') }}" class="waves-effect waves-dark"
                                    title="View Attendance Of Current Semester.">
@@ -118,37 +120,41 @@
                         </ul>
                     </li>
                     @if( Utility::is_user_admin() )
-                        <li>
+                        <li class="{{ Request::is('*home/dept*') ? 'active' : '' }}
+                        {{ Request::is('*home/subject*') ? 'active' : '' }}
+                        {{ Request::is('*home/batch/setting*') ? 'active' : '' }}
+                        {{ Request::is('*home/student*') ? 'active' : '' }}
+                        {{ Request::is('*home/faculty*') ? 'active' : '' }}">
                             <a href="#" class="waves-effect waves-dark">
                                 <i class="fa fa-sitemap"></i> Admin Settings
                                 <span class="fa arrow"></span>
                             </a>
                             <ul class="nav nav-second-level" aria-expanded="true">
-                                <li>
+                                <li {!! (Request::is('*home/dept*') ? 'class="active-menu"' : '') !!}>
                                     <a href="{{ url('/home/dept')  }}">
                                         <i class="fa fa-code-fork"></i>
                                         Departments
                                     </a>
                                 </li>
-                                <li>
+                                <li {!! (Request::is('*home/subject*') ? 'class="active-menu"' : '') !!}>
                                     <a href="{{ url('/home/subject') }}">
                                         <i class="fa fa-align-justify"></i>
                                         Subjects
                                     </a>
                                 </li>
-                                <li>
+                                <li {!! (Request::is('*home/batch/setting*') ? 'class="active-menu"' : '') !!}>
                                     <a href="{{ url('/home/batch/setting/index') }}">
                                         <i class="fa fa-users"></i>
                                         Batches
                                     </a>
                                 </li>
-                                <li>
+                                <li {!! (Request::is('*home/student*') ? 'class="active-menu"' : '') !!}>
                                     <a href="{{ url('/home/student') }}">
                                         <i class="fa fa-user"></i>
                                         Students
                                     </a>
                                 </li>
-                                <li>
+                                <li {!! (Request::is('*home/faculty*') ? 'class="active-menu"' : '') !!}>
                                     <a href="{{ url('/home/faculty') }}">
                                         <i class="fa fa-user-secret"></i>
                                         Faculties
