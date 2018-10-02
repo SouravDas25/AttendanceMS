@@ -3,13 +3,13 @@
 
 
 @section('page_style')
-<link rel="stylesheet" href="/css/treeview.css" />
+<link rel="stylesheet" href="{{ asset('/css/treeview.css') }}" />
 @endsection
 
 @section('section')
 <div class ="row">
 	<div class ="col-sm-8">
-		<form class="form-horizontal" action="/{{ Route::current()->uri() }}" method="get">
+		<form class="form-horizontal" action="{{ url('/'.Route::current()->uri()) }}" method="get">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<input type="text" class="form-control" name="search_text" placeholder="Search Subject..">
@@ -27,7 +27,7 @@
 	</div>
 	<div class="col-sm-4">
 		@include('widgets.panel_button',
-            [   'pb_link'=> "/home/subject/create",
+            [   'pb_link'=> url("/home/subject/create"),
                 'pb_icon'=>"fa fa-sitemap fa-5x",
                 'pb_icon_ani'=>"animated shake",
                 'pb_label'=>"Add a Subject",
@@ -60,12 +60,12 @@
 								@foreach($batch_id->subjects as $subject)
 									<li>
 										<span class="btn btn-info">
-											<a href="/home/subject/update/{{$subject->subject_code}}" title=edit >
+											<a href="{{ route('home.subject.update',[$subject->subject_code]) }}" title=edit >
 												<i class="fa fa-cog fa-fw"></i>
 											</a>
 										</span>
 										<span class="btn btn-danger">
-											<a href="/home/subject/delete/{{ $subject->subject_code }}" title=delete>
+											<a href="{{ route('home.subject.delete',[$subject->subject_code]) }}" title=delete>
 												<i class="fa fa-minus fa-fw"></i>
 											</a>
 										</span>
@@ -88,7 +88,7 @@
 
 
 @section('page_script')
-<script src="/js/treeview.js"></script>
+<script src="{{ asset('/js/treeview.js') }}"></script>
 <script>
 $(function () {
 	if('{{ isset($st)? $st : "" }}'.length <= 0)

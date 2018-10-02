@@ -73,7 +73,7 @@
 
                         <div class="form-group">
                             <label class="col-md-4 control-label"></label>
-                            <span class="col-md-4"><a href="{{ Utility::rootUrl("/csv/sample_batch.csv") }}">See Sample File</a></span>
+                            <span class="col-md-4"><a href="{{ url("/csv/sample_batch.csv") }}">See Sample File</a></span>
                         </div>
 
                         <div class="form-group">

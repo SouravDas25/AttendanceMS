@@ -21,7 +21,7 @@
             <label for="remember">Remember Me</label>
         </p>
         <div class="input-field">
-            <a href="{{ Utility::rootUrl('/forgot_password') }}">Forgot Password ?</a>
+            <a href="{{ url('/forgot_password') }}">Forgot Password ?</a>
         </div>
         {{ csrf_field() }}
         </p>
@@ -33,7 +33,7 @@
             Close
         </button>
         <button class="btn btn-danger waves-effect waves-green btn-flat" onclick="login_submit()">
-        Sign In
+            Sign In
         </button>
     </div>
 </div>

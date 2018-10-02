@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 animated bounceInUp">
             @include('widgets.panel_button',
-                [   'pb_link'=> "/home/class",
+                [   'pb_link'=> url('/home/class'),
                     'pb_icon'=>"fa fa-mortar-board fa-5x",
                     'pb_icon_ani'=>"animated shake",
                     'pb_label'=>"Take Attendance",
@@ -14,7 +14,7 @@
         </div>
         <div class="col-lg-3 col-md-6 animated bounceInDown">
             @include('widgets.panel_button',
-                [   'pb_link'=> "/home/batch",
+                [   'pb_link'=> url('/home/batch'),
                     'pb_icon'=>"	fa fa-area-chart fa-5x",
                     'pb_icon_ani'=>"animated swing",
                     'pb_label'=>"View Attendance",
@@ -23,7 +23,7 @@
         </div>
         <div class="col-lg-3 col-md-6 animated bounceInUp">
             @include('widgets.panel_button',
-                [   'pb_link'=> "/home/myclass",
+                [   'pb_link'=> url('/home/myclass'),
                     'pb_icon'=>"fa fa-lastfm fa-5x",
                     'pb_icon_ani'=>"animated shake",
                     'pb_label'=>"My Classes",
@@ -32,7 +32,7 @@
         </div>
         <div class="col-lg-3 col-md-6 animated bounceInDown">
             @include('widgets.panel_button',
-                [   'pb_link'=> "/home/long.term",
+                [   'pb_link'=> url('/home/long.term'),
                     'pb_icon'=>"fa fa-database fa-5x",
                     'pb_icon_ani'=>"animated swing",
                     'pb_label'=>"Attendance Storage",
@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 animated bounceInUp">
                 @include('widgets.card_button_3d',
-                    [   'pb_link'=> "/home/long.term/view/details/".$al[0]->student_id,
+                    [   'pb_link'=> url("/home/long.term/view/details/".$al[0]->student_id),
                         'pb_icon'=>"	glyphicon glyphicon-user fa-5x",
                         'pb_icon_ani'=>"animated shake",
                         'pb_label'=>$al[0]->name,

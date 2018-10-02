@@ -125,31 +125,31 @@
                             </a>
                             <ul class="nav nav-second-level" aria-expanded="true">
                                 <li>
-                                    <a href="/home/dept">
+                                    <a href="{{ url('/home/dept')  }}">
                                         <i class="fa fa-code-fork"></i>
                                         Departments
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/home/subject">
+                                    <a href="{{ url('/home/subject') }}">
                                         <i class="fa fa-align-justify"></i>
                                         Subjects
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/home/batch/setting/index">
+                                    <a href="{{ url('/home/batch/setting/index') }}">
                                         <i class="fa fa-users"></i>
                                         Batches
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/home/student">
+                                    <a href="{{ url('/home/student') }}">
                                         <i class="fa fa-user"></i>
                                         Students
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/home/faculty">
+                                    <a href="{{ url('/home/faculty') }}">
                                         <i class="fa fa-user-secret"></i>
                                         Faculties
                                     </a>

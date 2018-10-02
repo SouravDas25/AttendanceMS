@@ -33,13 +33,13 @@
                         <div class="list-group">
                             @if (isset($subjects) )
                             @foreach ($subjects as $subject)
-                            <a href="{{$subject->subject_code }}" class="list-group-item {{ (Request::is('*/'.$subject->subject_code) ? 'active' : '') }}">
+                            <a href="{{ route("home.batch.student.subjects",["id"=>$batch->id,"code"=>$subject->subject_code]) }}" class="list-group-item {{ (Request::is('*/'.$subject->subject_code) ? 'active' : '') }}">
                                 <h5 class="list-group-item-heading  ">{{ $subject->subject_code }}</h5>
                                 <small>{{ $subject->subject_name }}</small>
                             </a>
                             @endforeach
                             @endif
-                            <a href="total" class="list-group-item {{ (Request::is('*/total') ? 'active' : '') }} ">
+                            <a href="{{ url()->full() }}/total" class="list-group-item {{ (Request::is('*/total') ? 'active' : '') }} ">
                                 <h5 class="list-group-item-heading">Total</h5>
                                 <small>Average Attendance of all classes</small>
                             </a>

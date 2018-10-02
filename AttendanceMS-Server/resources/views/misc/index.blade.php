@@ -2,7 +2,7 @@
 @section('page_heading','Miscellaneous Settings')
 
 @section('page_style')
-<link rel="stylesheet" href="/css/bootstrap-slider.min.css" />
+<link rel="stylesheet" href="{{ asset('/css/bootstrap-slider.min.css') }}" />
 <style>
 #ex1Slider .slider-selection {
 	background: #BABABA;

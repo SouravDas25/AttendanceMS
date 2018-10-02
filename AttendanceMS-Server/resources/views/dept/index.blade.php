@@ -7,7 +7,7 @@
 
 <div class ="row">
 	<div class ="col-sm-8">
-		<form class="form-horizontal" action="/{{Route::current()->uri()}}" method="get">
+		<form class="form-horizontal" action="{{ url('/'.Route::current()->uri()) }}" method="get">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<input type="text" class="form-control" name="search_text" placeholder="Search Depatment..">
@@ -25,7 +25,7 @@
 	</div>
 	<div class="col-sm-4">
 		@include('widgets.panel_button',
-            [   'pb_link'=> "/home/dept/create",
+            [   'pb_link'=> url('/home/dept/create'),
                 'pb_icon'=>"fa fa-plus fa-5x",
                 'pb_icon_ani'=>"animated swing",
                 'pb_label'=>"Add a Department",

@@ -106,11 +106,11 @@
 					<td >
 						<div class="btn-group btn-group-xs" role="group" style="min-width:120%;" >
 							<a type="button" class="btn btn-info tool-btn"
-							href="myclass/update/{{ $db_class->active_day_id }}" data-toggle="tooltip" title="Edit" >
+							href="{{ route('home.myclass.update',[$db_class->active_day_id]) }}" data-toggle="tooltip" title="Edit" >
 								<i class="fa fa-cog fa-fw"></i>
 							</a>
-							<a type="button" class="btn btn-danger tool-btn" 
-							href="myclass/delete/{{ $db_class->active_day_id }}" data-toggle="tooltip" title="Delete"  >
+							<a type="button" class="btn btn-danger tool-btn"
+							href="{{ route('home.myclass.delete',[$db_class->active_day_id]) }}" data-toggle="tooltip" title="Delete"  >
 								<i class="fa fa-minus fa-fw"></i>
 							</a>
 						</div>

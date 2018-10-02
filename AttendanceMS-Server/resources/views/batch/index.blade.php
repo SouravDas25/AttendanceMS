@@ -14,7 +14,7 @@
                         <div class="collapsible-body bg-danger" style="padding:5px">
                             <div class="list-group">
                                 @foreach($dept['batches'] as $batch)
-                                    <a href="/{{ Request::path().'/student/'. $batch->batch_no }}/total"
+                                    <a href="{{ route('home.batch.student.subject',[ $batch->batch_no,'total']) }}"
                                        class="list-group-item">
                                         <h4>
                                             {{ Utility::ordinal_suffix( intdiv($batch->sem_no +1,$dept['dept_data']->course_years) +1 ) }}

@@ -35,7 +35,7 @@
 		<div class="collapsible-body bg-danger" style="padding:5px" >
 			<div class="list-group white-text">
 				@foreach($dept->batches as $batch)
-					<a href="/{{ Request::path().'/view/'. $batch->batch_no }}" class="list-group-item ">
+					<a href="{{ route('home.long.term.view',[$batch->batch_no]) }}" class="list-group-item ">
 						<h4>
 						{{ $batch->start_date }} -  
 						{{ $batch->start_date + $batch->course_years }} Batch

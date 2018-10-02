@@ -5,7 +5,7 @@
 	<div class ="col-sm-8">
 		@section ('pane2_panel_title', 'Create Department')
     @section ('pane2_panel_body')
-      <form class="form-horizontal" action='/{{Request::path()}}/submit' method="POST">
+      <form class="form-horizontal" action='{{ route("home.dept.create.submit") }}' method="POST">
 				<fieldset>
 
 				<div class="form-group">
