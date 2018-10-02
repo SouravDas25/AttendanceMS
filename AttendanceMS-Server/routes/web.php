@@ -63,15 +63,15 @@ Route::group(['prefix' => 'home', 'middleware' => 'home',"as"=>"home"], function
         Route::get('/delete/{id}', 'deptController@delete');
         Route::post('/delete/submit', 'deptController@delete_submit');
     });
-    Route::group(['prefix' => '/class'], function () {
-        Route::get('/', 'classController@index');
-        Route::get('/{sub_code}', 'classController@subject');
-        Route::post('/submit', 'classController@subject_submit');
+    Route::group(['prefix' => '/class','as'=>'.class'], function () {
+        Route::get('/', 'classController@index')->name('.index');
+        Route::get('/{sub_code}', 'classController@subject')->name('.subject');
+        Route::post('/submit', 'classController@subject_submit')->name('.subject.submit');
     });
-    Route::group(['prefix' => '/long.term'], function () {
-        Route::get('/', 'longtermController@index');
-        Route::get('/view/{id}', 'longtermController@view');
-        Route::get('/view/details/{id}', 'longtermController@view_details');
+    Route::group(['prefix' => '/long.term','as'=>'.long.term'], function () {
+        Route::get('/', 'longtermController@index')->name('.index');
+        Route::get('/view/{id}', 'longtermController@view')->name('.view');
+        Route::get('/view/details/{id}', 'longtermController@view_details')->name('.view.details');
         Route::get('/create/{id}', 'longtermController@create');
         Route::post('/create/submit', 'longtermController@create_submit');
         Route::get('/update/{id}/{no}', 'longtermController@update');
@@ -81,15 +81,15 @@ Route::group(['prefix' => 'home', 'middleware' => 'home',"as"=>"home"], function
         Route::get('/normalize', 'longtermController@normalize');
         Route::post('/normalize/submit', 'longtermController@normalize_submit');
     });
-    Route::group(['prefix' => '/myclass'], function () {
-        Route::get('/', 'myclassController@index');
-        Route::get('/update/{id}', 'myclassController@update');
-        Route::post('/update/submit', 'myclassController@update_submit');
-        Route::get('/delete/{id}', 'myclassController@delete');
-        Route::post('/delete/submit', 'myclassController@delete_submit');
+    Route::group(['prefix' => '/myclass','as'=>'.myclass'], function () {
+        Route::get('/', 'myclassController@index')->name('.index');
+        Route::get('/update/{id}', 'myclassController@update')->name('.update');
+        Route::post('/update/submit', 'myclassController@update_submit')->name('.update.submit');
+        Route::get('/delete/{id}', 'myclassController@delete')->name('.delete');
+        Route::post('/delete/submit', 'myclassController@delete_submit')->name('.delete.submit');
     });
-    Route::group(['prefix' => '/batch'], function () {
-        Route::get('/', 'batchController@index');
+    Route::group(['prefix' => '/batch' , 'as' => '.batch'], function () {
+        Route::get('/', 'batchController@index')->name('.index');
         Route::get('/create', 'batchController@create');
         Route::post('/create/submit', 'batchController@create_submit');
         Route::get('/update/{id}', 'batchController@update');
@@ -98,15 +98,15 @@ Route::group(['prefix' => 'home', 'middleware' => 'home',"as"=>"home"], function
         Route::post('/delete/submit', 'batchController@delete_submit');
         Route::get('/student/{id}/{code}', 'batchController@student_view')->name(".student.subject");
         Route::get('/student/{id}/{code}/longlist', 'batchController@student_longlistview');
-        Route::get('/setting/index', 'batchController@setting_index');
+        Route::get('/setting/index', 'batchController@setting_index')->name('settings.index');
     });
-    Route::group(['prefix' => '/subject'], function () {
-        Route::get('/', 'subjectController@index');
-        Route::get('/create', 'subjectController@create');
+    Route::group(['prefix' => '/subject','as'=>'.subject'], function () {
+        Route::get('/', 'subjectController@index')->name('.index');
+        Route::get('/create', 'subjectController@create')->name('.create');
         Route::post('/create/submit', 'subjectController@create_submit');
-        Route::get('/update/{code}', 'subjectController@update');
+        Route::get('/update/{code}', 'subjectController@update')->name('.update');
         Route::post('/update/submit', 'subjectController@update_submit');
-        Route::get('/delete/{code}', 'subjectController@delete');
+        Route::get('/delete/{code}', 'subjectController@delete')->name('.delete');
         Route::post('/delete/submit', 'subjectController@delete_submit');
     });
     Route::group(['prefix' => '/student'], function () {

@@ -44,7 +44,7 @@
                     @foreach ($students as $student)
                     
                         <tr>
-                            <td><a href="/home/long.term/view/details/{{$student->student_id}}"
+                            <td><a href="{{ route('home.long.term.view.details',[$student->student_id]) }}"
                             class="btn btn-warning btn-block btn-xs" >View</a>
                             </td>
                             <td>{{ $student->student_roll }}</td>

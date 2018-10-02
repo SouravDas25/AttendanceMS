@@ -60,12 +60,12 @@
 								@foreach($batch_id->subjects as $subject)
 									<li>
 										<span class="btn btn-info">
-											<a href="/home/subject/update/{{$subject->subject_code}}" title=edit >
+											<a href="{{ route('home.subject.update',[$subject->subject_code]) }}" title=edit >
 												<i class="fa fa-cog fa-fw"></i>
 											</a>
 										</span>
 										<span class="btn btn-danger">
-											<a href="/home/subject/delete/{{ $subject->subject_code }}" title=delete>
+											<a href="{{ route('home.subject.delete',[$subject->subject_code]) }}" title=delete>
 												<i class="fa fa-minus fa-fw"></i>
 											</a>
 										</span>

@@ -23,7 +23,7 @@
 					<div class="collapsible-body bg-info">
 						<div class="list-group " style="padding:5px">
 							@foreach($sem["subjects"] as $subject)
-							<a href="class/{{{ htmlspecialchars($subject->subject_code) }}}" class="list-group-item ">
+							<a href="{{ route('home.class.subject',[$subject->subject_code]) }}" class="list-group-item ">
 								<span class="badge red white-text">{{$subject->subject_code}}</span>
 								<h4 class="">
 									<strong>{{$subject->subject_code}}</strong>

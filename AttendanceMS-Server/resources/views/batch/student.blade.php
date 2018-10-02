@@ -39,7 +39,7 @@
                             </a>
                             @endforeach
                             @endif
-                            <a href="total" class="list-group-item {{ (Request::is('*/total') ? 'active' : '') }} ">
+                            <a href="{{ url()->full() }}/total" class="list-group-item {{ (Request::is('*/total') ? 'active' : '') }} ">
                                 <h5 class="list-group-item-heading">Total</h5>
                                 <small>Average Attendance of all classes</small>
                             </a>
