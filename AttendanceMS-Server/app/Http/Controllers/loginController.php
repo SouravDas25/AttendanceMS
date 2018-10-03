@@ -9,9 +9,14 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Utility;
 
+/**
+ *  Login Controller 
+ */
 class loginController extends Controller
 {
-
+    /**
+     * logout function
+     */
     public function out(Request $req)
     {
         if (!Utility::is_loged_in()) {
