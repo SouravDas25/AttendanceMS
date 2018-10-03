@@ -2,7 +2,7 @@
 *.pyc
 *.exe
 */.idea/
-
+*.gradle/*
 *.pdf
 *.db
 *.csv
