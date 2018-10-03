@@ -48,7 +48,7 @@
                         <div class="indeterminate"></div>
                     </div>
 
-                    <form class="" action="{{ Utility::rootUrl() }}" id="your_attn_form">
+                    <form class="" action="{{ url('/') }}" id="your_attn_form">
 
                         <div class="input-field col s12">
                             <select id="dept" name="dept" class="validate" required onchange="show_year()">
