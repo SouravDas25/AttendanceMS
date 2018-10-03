@@ -7,8 +7,9 @@
 *.db
 *.csv
 *.dat
-
+*.lock
 *.env
 *AttendanceMS-Server/vendor/*
 *Minor-Project/Automated Attedence System/data/*
 *database-data.sql
+*.bin

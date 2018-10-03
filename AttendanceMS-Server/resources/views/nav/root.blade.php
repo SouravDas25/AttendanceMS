@@ -1,6 +1,6 @@
 <nav class=" grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="{{ Utility::is_loged_in() ? url('/home') : url() }}"
+        <a id="logo-container" href="{{ Utility::is_loged_in() ? url('/home') : url('/') }}"
            class="brand-logo" style="font-size:1.2em;">Attendance MS</a>
         <ul class="right hide-on-med-and-down">
             <li>

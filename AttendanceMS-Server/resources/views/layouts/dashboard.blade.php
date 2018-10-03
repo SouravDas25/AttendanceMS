@@ -63,7 +63,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{{ Utility::rootUrl() }}" class="waves-effect waves-dark">
+                                <a href="{{ url('/') }}" class="waves-effect waves-dark">
                                     <small><i class="fa fa-envelope"></i>
                                         {{ Utility::is_loged_in() ? Utility::get_user_email() : "Laravel 5" }}</small>
                                 </a>
