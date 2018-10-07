@@ -4,7 +4,9 @@ Attendance Management System
 * Offline Attendance Facility in App ( attendance can be taken even when offline).
 
 ## Web App 
-* https://ticteduattendence.000webhostapp.com
+* Visit : https://ticteduattendence.000webhostapp.com
+    + email : admin@admin.com
+    + password : root
 * Laravel PHP
 * MySQL
 
