@@ -14,10 +14,10 @@ Attendance Management System
 ## Installation for Server
 
  - clone the repository.
+ - create a .env file 
+ - fill the .env file properties needed to run the application
  - run "composer install"
  - run "php artisan key:generate" 
- - create a .env file 
- - add the necessary details to the env variable 
  - open with apache
  - done
 
