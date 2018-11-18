@@ -16,8 +16,8 @@ Attendance Management System
  - clone the repository.
  - create a .env file 
  - fill the .env file properties needed to run the application
- - run "composer install"
- - run "php artisan key:generate" 
+ - run "composer install" from cmd or terminal
+ - run "php artisan key:generate" from cmd or terminal
  - open with apache
  - done
 
