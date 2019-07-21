@@ -1,0 +1,52 @@
+version: '3'
+services:
+  db:
+    container_name: msql_local
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - attendance_ms_volume:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  app:
+    build: .
+    container_name: app
+    restart: unless-stopped
+    working_dir: /var/www
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - 9000:9000
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - app-network
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: webserver
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+
+
+volumes:
+  attendance_ms_volume:
+
+networks:
+  app-network:
+    driver: bridge
