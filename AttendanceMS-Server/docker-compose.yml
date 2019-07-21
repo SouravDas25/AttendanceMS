@@ -24,7 +24,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - ./:/var/www
+      - .:/var/www/
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
     networks:
       - app-network
@@ -33,14 +33,30 @@ services:
   webserver:
     image: nginx:alpine
     container_name: webserver
+    tty: true
     ports:
       - 80:80
       - 443:443
     volumes:
-      - ./:/var/www
+      - .:/var/www/
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
       - app-network
+
+  web:
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    container_name: web
+    restart: unless-stopped
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - 8888:80
+    volumes:
+      - ./:/var/www
 
 
 
