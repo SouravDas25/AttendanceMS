@@ -12,36 +12,36 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
 
-  app:
-    build: .
-    container_name: app
-    restart: unless-stopped
-    working_dir: /var/www
-    depends_on:
-      - db
-    links:
-      - db
-    ports:
-      - 9000:9000
-    volumes:
-      - .:/var/www/
-      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
-    networks:
-      - app-network
-
-  #Nginx Service
-  webserver:
-    image: nginx:alpine
-    container_name: webserver
-    tty: true
-    ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - .:/var/www/
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
-    networks:
-      - app-network
+  #  app:
+  #    build: .
+  #    container_name: app
+  #    restart: unless-stopped
+  #    working_dir: /var/www
+  #    depends_on:
+  #      - db
+  #    links:
+  #      - db
+  #    ports:
+  #      - 9000:9000
+  #    volumes:
+  #      - .:/var/www/
+  #      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+  #    networks:
+  #      - app-network
+  #
+  #  #Nginx Service
+  #  webserver:
+  #    image: nginx:alpine
+  #    container_name: webserver
+  #    tty: true
+  #    ports:
+  #      - 80:80
+  #      - 443:443
+  #    volumes:
+  #      - .:/var/www/
+  #      - ./nginx/conf.d/:/etc/nginx/conf.d/
+  #    networks:
+  #      - app-network
 
   web:
     build:
@@ -54,7 +54,7 @@ services:
     links:
       - db
     ports:
-      - 8888:80
+      - 8080:80
     volumes:
       - ./:/var/www
 
@@ -63,6 +63,6 @@ services:
 volumes:
   attendance_ms_volume:
 
-networks:
-  app-network:
-    driver: bridge
+  #networks:
+  ##  app-network:
+  ##    driver: bridge

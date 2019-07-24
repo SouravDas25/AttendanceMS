@@ -183,7 +183,7 @@
                     @foreach( explode("/",Request::path()) as $part )
                         <?php  $prev = $prev . "/" . $part ?>
                         <li>
-                            <a href="{{$prev}}">{{ $part }}</a>
+                            <a href="{{$prev}}">{{ strtoupper($part) }}</a>
                         </li>
                     @endforeach
                     <li>
