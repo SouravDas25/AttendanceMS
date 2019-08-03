@@ -14,7 +14,7 @@ Attendance Management System
 
  - clone the repository.
  - docker run --rm -v $(pwd):/app composer install
- - docker-compose up 
+ - docker-compose up -d 
  - docker-compose exec web php artisan migrate
  - docker-compose exec web php artisan key:generate 
  - open http://localhost:8080/
