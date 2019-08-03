@@ -13,12 +13,13 @@ Attendance Management System
 ## Installation for Server
 
  - clone the repository.
- - create a .env file 
- - fill the .env file properties needed to run the application
- - run "composer install" from cmd or terminal
- - run "php artisan key:generate" from cmd or terminal
- - open with apache
+ - docker run --rm -v $(pwd):/app composer install
+ - docker-compose up 
+ - docker-compose exec web php artisan migrate
+ - docker-compose exec web php artisan key:generate 
+ - open http://localhost:8080/
  - done
+ 
 
 ## Installation for App
 
