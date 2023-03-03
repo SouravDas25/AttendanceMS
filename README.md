@@ -55,8 +55,6 @@ Attendance Management System
 ### Login
 ![Login](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor-Project/Automated%20Attedence%20System/fceeaebc-a061-4398-9860-6827d2df9822.jpg)
 
-### Welcome
-![Welcome](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor-Project/Automated%20Attedence%20System/ad888756-8af3-42c2-867b-e74f9cfbc65d.jpg)
 
 ### Home
 ![Home](https://github.com/SouravDas25/AttendanceMS/blob/master/Minor-Project/Automated%20Attedence%20System/5f3d32a6-504d-4bdc-9fc0-8d1e1e37f4d7.jpg)
